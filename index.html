@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турист-про</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main_style.css">
+    <link rel="stylesheet" href="./styles/booking.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul class="menu font">
+                <li class="menu-item"><a class="link" href="./index.html"><img src="./img/logo.svg" alt="logo" class="logo"></a></li>
+                <li class="menu-item"><a class="link link-active" href="./booking.html">Бронирование</a></li>
+                <li class="menu-item"><a class="link link-active" href="./seat.html">Зоны</a></li>
+                <li class="menu-item"><a class="link link-active" href="./search.html">Результаты</a></li>
+                <li class="menu-item"><input type="text" class="input-btn"><button class="find-btn">Поиск</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="banner font">
+            <div class="container">
+                <h2>Турист-Pro</h2>
+                <h3>Исполнить мечты просто!</h3>
+                <div class="discrub">
+                    <p>Клиенты компании нашей имеют возможность заказать
+                        организацию туристического похода по одному из предоставленных маршрутов.
+                        Компания берет на себя обязанность по полному расчету похода, с учетом всех
+                        пожеланий клиентов. Компания предоставляет широкий спектр дополнительных
+                        услуг, таких как: услуги проводников, предоставление аренды туристического
+                        оборудования, информационная поддержка и т.д.
+                    </p>
+                    <img src="./img/menege.jpg" alt="discrub-image">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reviews container font">
+            <h2>Отзывы</h2>
+            <div>
+                <h3>Сергей</h3>
+                <figure>
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                </figure>
+                <p>Когда другие агентства помашут вам платочком, "Турист-Pro" пойдет навстречу и решит ваши проблемы. 
+                    Индивидуальный подход, профессионализм и заинтересованность в каждом туристе.</p>
+            </div>
+
+            <div>
+                <h3>Игрим</h3>
+                <figure class="stars">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                </figure>
+                <p >Надежная покупка экскурсий на остров!</p>
+            </div>
+
+            <div>
+                <h3>Кейлет</h3>
+                <figure>
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star-active.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                </figure>
+                <p>Никаких страшных ужасов - мы живы и даже почти довольны!</p>
+            </div>
+        </div>
+        
+
+        <div class="container booking font">
+            <h2>Как бронировать?</h2>
+            <figure>
+                <span class="text q1">Найти путевку</span><i class="right"></i>
+                <span class="text q2">Оплатить</span><i class="right"></i>
+                <span class="text q3">Получить документы</span><i class="right"></i>
+                <span class="text q4">Насладиться отдыхом</span>
+            </figure>
+        </div> 
+
+        <div class="container font find">
+            <h2>Поиск</h2>
+            <div>
+                <ul>
+                    <li>
+                        <label>Регион:
+                        <select>
+                            <option>Италия</option>
+                            <option>Германия</option>
+                            <option>Молдова</option>
+                            <option>Турция</option>
+                            <option>Сербия</option>
+                            <option>Чехия</option>
+                        </select>
+                    </label>
+                    </li>
+                    <li>
+                        <label>Введите дату: <input type="date"></label>
+                    </li>
+                    <li>
+                        <label>Введите количество: <input  id="kolvo"type="number" value="0" min="0"></label>
+                    </li>
+                </ul>
+                <button class="find-btn"><a href="./rezults.html" target="_blank" rel="noopener noreferrer" class="link">Поиск</a></button>
+            </div>
+        </div>
+
+        <div class="container font discount">
+            <section id="slider_bl">
+                <h2>Акции</h2>
+                <div class="wrapper">
+                  <input checked type=radio name="slider" id="slide1" />
+                  <input type=radio name="slider" id="slide2" />
+                  <input type=radio name="slider" id="slide3" />
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <h3>Италия</h3>
+                        <div class="slider-content">
+                            <img src="./img/1.jpg" alt="slider-image">
+                            <p class="slider-text">
+                                Экскурсионный тур в Италию из Санкт-Петербурга по маршруту: 
+                                Вильнюс - Каунас - Варшава - Вена...
+                            </p>
+                        </div>
+                        <p class="more"> Подробнее...</p>
+                      </article>
+
+                      <article>
+                        <h3>Сербия</h3>
+                        <div class="slider-content">
+                            <img src="./img/2.jpg" alt="slider-image">
+                            <p class="slider-text">
+                                Мы отобрали несколько актуальных предложений по отдыху и ценам Сербии. 
+                                Разделив их по видам отдыха и отелям Сербии, чтобы Вам было легче определиться..
+                            </p>
+                            
+                        </div>
+                        <p class="more"> Подробнее...</p>
+                      </article>
+
+                      <article>
+                        <h3>Турция</h3>
+                        <div class="slider-content">
+                            <img src="./img/3.jpg" alt="slider-image">
+                            <p class="slider-text">
+                                Турция уже более 20 лет является эталоном пляжного отдыха за рубежом для россиян. 
+                                Когда-то большинство российских туристов начинали свой опыт путешествий именно в Турциие..
+                            </p>
+                        </div>
+                        <p class="more"> Подробнее...</p>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="slider-prev-next-control">
+                    <label for=slide1></label>
+                    <label for=slide2></label>
+                    <label for=slide3></label>
+                  </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="container subcribe font">
+            <h2>Подписаться</h2>
+            <label>Введите почту:</label>
+            <input type="email" pattern=".+@globex\.com" size="30" required>
+            <button>Подписаться</button>
+        </div>
+    </main>
+    
+    <footer class="container">
+        <div>
+            <p>Телефон “8 (800) 555-33-10”</p>
+            <p>Обратная связь:</p>
+            <ul>
+                <li><a class="link" href="./booking.html">Бронирование</a></li>
+                <li><a class="link" href="./rezults.html">Результат</a></li>
+                <li><a class="link" href="./zones.html">Зоны</a></li>
+            </ul>
+            <a href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
+        </div>
+</body>
+</html> 

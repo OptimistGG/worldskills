@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турист-про</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main_style.css">
+    <link rel="stylesheet" href="./styles/booking.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul class="menu font">
+                <li class="menu-item"><a class="link" href="./index.html"><img src="./img/logo.svg" alt="logo" class="logo"></a></li>
+                <li class="menu-item"><a class="link link-active" href="./booking.html">Бронирование</a></li>
+                <li class="menu-item"><a class="link link-active" href="./zones.html">Зоны</a></li>
+                <li class="menu-item"><a class="link link-active" href="./rezults.html">Результаты</a></li>
+                <li class="menu-item"><input type="text" class="input-btn"><button class="find-btn">Поиск</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="container route">
+            <p class="route-name">Имя: <input type="text" class="name" value=""></p>
+
+            <div class="region">
+                <label class="region-name">Регион:</label>
+                <select class="region-select">
+                    <option value="1">Италия</option>
+                    <option value="2">Германия</option>
+                    <option value="3">Молдова</option>
+                    <option value="4">Турция</option>
+                    <option value="5">Чехия</option>
+                </select>
+            </div>
+
+            <p class="data">Дата: <input type="date" class="data-input"></p>
+
+            <p class="value-zone">Кол-во человек: <input type="text" class="value-zone-text"></p>
+
+            <div class="additional">
+                <ul class="additional-list">
+                    <li class="additional-list-item">Услуги проводника:<input type="checkbox" name="" id="checkbox"></li>
+                    <li class="additional-list-item">Услуги оренды туристического оборудования:<input type="checkbox" name="" id="checkbox"></li>
+                    <li class="additional-list-item">Услуги фотографа/видеооператора:<input type="checkbox" name="" id="checkbox"></li>
+                    <li class="additional-list-item">Страхование от несчастных случаев:<input type="checkbox" name="" id="checkbox"></li>
+                </ul>
+            </div>
+
+            <p class="comment-text">Комментарий:<input type="text" class="comment"></p>
+    
+            <p class="entry-email-text">Введите свою почту:<input type="email"  size="30" required class="email"></p>
+
+
+            <div class="cost">
+                <p class="cost-text">Стоимость: <span class="cost-value"> 25.000 руб</span></p>
+                <button class="cost-btn">Оформить</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="container">
+        <div>
+            <p>Телефон “8 (800) 555-33-10”</p>
+            <p>Обратная связь:</p>
+            <ul>
+                <li><a class="link" href="./booking.html">Бронирование</a></li>
+                <li><a class="link" href="./rezults.html">Результат</a></li>
+                <li><a class="link" href="./zones.html">Зоны</a></li>
+            </ul>
+            <a href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
+        </div>
+</body>
+</html> 

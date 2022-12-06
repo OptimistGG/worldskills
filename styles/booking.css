@@ -1,0 +1,14 @@
+.region , .route-name , .level , .data , .value-zone, .comment-text, .entry-email-text, .additional, .cost{
+    text-align: left;
+    max-width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.region-select, .level-select, .value-zone-text, .data-input, .name, .email, .comment, .cost-value{
+    font-weight: 600;
+    padding: 10px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+}
